@@ -1,8 +1,7 @@
 import Images from "../../assets/images";
-import Image from "../../assets/images";
-import { Square, SquareImg } from "./SquareButton.styles";
+import { Square, SquareImg } from "./SquareDark.styles";
 
-const SquareButton = () => {
+const SquareDark = () => {
   return (
     <>
       <Square>
@@ -15,4 +14,4 @@ const SquareButton = () => {
   );
 };
 
-export default SquareButton;
+export default SquareDark;

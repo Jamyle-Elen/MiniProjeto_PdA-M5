@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const MainFooter = styled.footer`
   width: 100%;
-  background-color: var(--footer-bg);
-`;
+  /* background-color: var(--footer-bg); */
+  background-color: ${({ theme }) => theme.footerBg};
+`
 
 export const SocialMedia = styled.div`
   width: 100%;
@@ -21,7 +22,12 @@ export const SocialMediaImg = styled.img`
   padding: 0 0.5rem;
   margin-bottom: 1rem;
   width: 40px;
-`;
+  transition: .4s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+`
 
 export const Copyright = styled.p`
   color: var(--dark-text);
@@ -31,5 +37,5 @@ export const Copyright = styled.p`
 export const BottomFooter = styled.div`
   width: 100%;
   height: 3vh;
-  background-color: var(--bottom-footer-bg);
+  background-color: ${({ theme }) => theme.bottomFooterBg};
 `;

@@ -16,6 +16,7 @@ const ImgTheme = styled.img`
     padding: .1rem;
     border: #fff solid 1px;
     border-radius: 20px;
+    cursor: pointer;
 `
 
 export {NavBarContainer, ImgTheme};

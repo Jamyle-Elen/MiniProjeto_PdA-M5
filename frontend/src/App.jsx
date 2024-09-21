@@ -1,4 +1,4 @@
-import ReportButton from './components/Button/Button.style.js'
+import { ReportButton, Info } from './components/Button/Button.style.js'
 import LadingPage from './pages/Lading Page/LadingPage.jsx'
 import './App.css'
 

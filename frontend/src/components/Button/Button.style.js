@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const ReportButton = styled.button`
-  /* background-color: var(--report-button); */
-  background-color: #d9d9d9;
+  background-color: var(--report-button);
   border: none;
   color: #353535;
   font-family: "Jersey 20", sans-serif;
@@ -13,7 +12,7 @@ const ReportButton = styled.button`
   cursor: pointer;
   position: relative;
   letter-spacing: 1px;
-  transition: .2s;
+  transition: .4s;
   margin: 10px;
   box-shadow: 0 0 0 4px transparent;
   width: 13rem;
@@ -31,9 +30,14 @@ const ReportButton = styled.button`
   }
 
   &:hover {
-    background-color: #F8F7F7;
+    background-color: var(--lightTheme-btn-hover);
   }
-`;
+`
 
-export default ReportButton;
-// tag de function o nome dessas ``
+const Info = styled.p`
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+`
+
+export { ReportButton, Info };

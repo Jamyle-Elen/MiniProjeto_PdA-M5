@@ -5,7 +5,9 @@ export const MainContainer = styled.main`
     width: 100%;
     height: 100vh;
     /* border: red solid 1px; */
-    background-image: url(${Images.amazon});
+    /* background-image: url(${Images.amazon}); */
+    background-image: url(${({ theme }) => theme.background});
+    transition: .4s;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
