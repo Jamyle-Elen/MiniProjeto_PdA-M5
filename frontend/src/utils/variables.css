@@ -4,4 +4,10 @@
     --squareButton-hover: #151410;
     --footer-bg: #080807;
     --bottom-footer-bg: #34342D;
+    
+    --lightTheme-square: #4A484C;
+    --lightTheme-square-hover: #686669;
+    --lightTheme-bg: #1A1716;
+    --lightTheme-container: #4A484C;
+    --lightTheme-btn-hover: #fff8f8;    
 }
