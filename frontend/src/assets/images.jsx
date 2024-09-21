@@ -10,6 +10,12 @@ import MataIgapo from './images/mata-igapo.png'
 import MataVarzea from './images/mata-varzea.png'
 import MataTerraFirme from './images/mata-terra-firme.png'
 import MataSemiumida from './images/mata-igapo.png'
+import animals from './images/animals.png'
+import destroyed from './images/destroyed.png'
+import hut from './images/hut.png'
+import fire from './images/fire.png'
+import once from './images/once.webp'
+import panda from './images/panda.webp'
 
 const Images = {
     moon_icon_light,
@@ -23,7 +29,13 @@ const Images = {
     MataIgapo,
     MataVarzea,
     MataTerraFirme,
-    MataSemiumida
+    MataSemiumida,
+    animals,
+    destroyed,
+    hut,
+    fire,
+    once,
+    panda
 }
 
 export default Images
