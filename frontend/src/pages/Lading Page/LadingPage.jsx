@@ -5,13 +5,14 @@ import { MainContainer, MainTitle, MainDescription } from "./LadingPage.styles";
 import Footer from "../../components/Footer/Footer.jsx";
 import SquareDark from "../../components/SquareDark/SquareDark.jsx";
 import SquareLight from "../../components/SquareLight/SquareLight.jsx";
+import SessionDark from "../../components/SessionDark/SessionDark.jsx";
 import SecondContainer from "../../components/SecondContainer/SecondContainer.jsx";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../../utils/themes";
 import Carousel from "../../components/Carousel/Carousel.jsx";
 
 const LadingPage = () => {
-
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const [ theme, setTheme ] = useState('light');
 
   return (
@@ -27,10 +28,10 @@ const LadingPage = () => {
         }
     </MainContainer>
 
-    {theme === 'light' ? <SquareDark/> : <SquareLight/>}
+    {theme === 'light' ? <SquareDark setSelectedIndex={setSelectedIndex}/> : <SquareLight/>}
     {/* <SquareDark/> */}
     <section>
-        {theme === 'light' ? null : <SecondContainer/> }
+    {theme === 'light' ? <SessionDark selectedIndex={selectedIndex}/> : <SecondContainer/> }
     </section>
     <section>
     <Carousel/>

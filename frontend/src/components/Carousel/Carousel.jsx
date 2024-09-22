@@ -14,7 +14,7 @@ const Carousel = () => {
       <CarouselContainer>
         {/* <h4>ANIMAIS EM EXTINÇÃO</h4> */}
         <ImageContainerII>
-        <CarouselImg src={theme === lightTheme ? Images.once : Images.panda} alt="" /></ImageContainerII>
+            <CarouselImg src={theme === lightTheme ? Images.once : Images.panda} alt="" /></ImageContainerII>
         <ImageContainerIII>
             <CarouselImg src={theme === lightTheme ? Images.once : Images.panda} alt="" /></ImageContainerIII>
         <ImageContainerIII>

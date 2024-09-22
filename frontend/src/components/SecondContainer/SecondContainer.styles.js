@@ -18,7 +18,9 @@ export const Forest = styled.div`
     max-width: 500px;
     height: 100%;
     /* border: green solid 1px; */
-    background-color: var(--lightTheme-container);
+    background-color: ${({ theme }) => theme.forestSession};
+    /* border: red solid 1px; */
+
 `
 
 export const ForestInfo = styled.div`
@@ -31,7 +33,7 @@ export const ForestInfo = styled.div`
     align-items: center;
     /* border: yellow solid 1px; */
     /* border: green solid 1px; */
-    background-color: var(--lightTheme-container);
+    background-color: ${({ theme }) => theme.forestSession};
 `
 
 export const ForestImg = styled.img`

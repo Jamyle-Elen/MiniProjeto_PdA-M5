@@ -16,6 +16,7 @@ import hut from './images/hut.png'
 import fire from './images/fire.png'
 import once from './images/once.webp'
 import panda from './images/panda.webp'
+import MataIgapoBig from './images/mata-igapo-big.jpg'
 
 const Images = {
     moon_icon_light,
@@ -35,7 +36,8 @@ const Images = {
     hut,
     fire,
     once,
-    panda
+    panda,
+    MataIgapoBig
 }
 
 export default Images
