@@ -1,5 +1,7 @@
 # **Floresta Amazônica - Ação e Preservação**
 
+[![English Version](https://img.shields.io/badge/Version-English-blue)](./README_en.md)
+
 ## 📝 **Sobre**
 A aplicação **Floresta Amazônica** é uma landing page interativa desenvolvida com o objetivo de conscientizar os usuários sobre a preservação da Floresta Amazônica e as consequências devastadoras de sua destruição. Com uma abordagem visual impactante, o projeto apresenta duas versões do ecossistema: uma versão da floresta em seu estado natural, e uma versão degradada pelos incêndios e destruição ambiental.
 
