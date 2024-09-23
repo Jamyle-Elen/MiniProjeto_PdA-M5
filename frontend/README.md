@@ -9,6 +9,8 @@ By toggling between **dark** and **light** modes, the user can view the preserve
 
 This project utilizes several technologies, including **Node.js** for the backend, with routes that provide information about fires, forest destruction, and recent updates.
 
+![Amazon Forest (1)](https://github.com/user-attachments/assets/5958876c-0ba7-4725-8f49-3edcad8c2aee)
+
 ## 🌍 **Problem Statement**
 The Amazon Rainforest, the largest tropical biome in the world, is facing one of the greatest environmental challenges in recent history: destruction caused by illegal fires and rampant deforestation. This devastation threatens biodiversity, contributes to climate change, and directly impacts local populations who rely on the forest for their livelihood.
 
