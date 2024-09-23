@@ -1,6 +1,6 @@
 # **Amazon Rainforest - Action and Preservation**
 
-[![Versão Português](https://img.shields.io/badge/Versão-PortuguêsBR-blue)](./README.md)
+[![Versão Português](https://img.shields.io/badge/Versão-PortuguêsBR-blue)](../README.md)
 
 ## 📝 **About**
 The **Amazon Rainforest** application is an interactive landing page developed with the goal of raising awareness about the preservation of the Amazon Rainforest and the devastating consequences of its destruction. With a visually impactful approach, the project presents two versions of the ecosystem: one showing the forest in its natural state and another showing it degraded by fires and environmental destruction.
