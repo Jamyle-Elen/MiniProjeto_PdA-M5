@@ -9,6 +9,8 @@ Ao alternar entre os modos **escuro** e **claro**, o usuário pode visualizar, r
 
 Este projeto utiliza diversas tecnologias, incluindo **Node.js** para o backend, com rotas que fornecem informações sobre incêndios, destruição da floresta e atualizações recentes.
 
+![Amazon Forest](https://github.com/user-attachments/assets/2df16134-5f86-4861-95d9-291d9899ff74)
+
 ## 🌍 **Problematização**
 A Floresta Amazônica, o maior bioma tropical do mundo, está enfrentando um dos maiores desafios ambientais da história recente: a destruição por queimadas ilegais e desmatamento desenfreado. Essa devastação ameaça a biodiversidade, contribui para a mudança climática e afeta diretamente as populações locais que dependem da floresta para sua subsistência.
 
