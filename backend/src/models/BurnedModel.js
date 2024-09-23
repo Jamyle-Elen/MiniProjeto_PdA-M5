@@ -15,7 +15,7 @@ const Burned = db.define(
     },
   },
   {
-    timestamps: false,
+    timestamps: true,
   }
 );
 

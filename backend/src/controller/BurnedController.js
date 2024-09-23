@@ -20,3 +20,12 @@ export const getFireData = async (req,res) => {
         res.status(500).json({ message: 'Erro ao buscar os dados de queimadas', error });
     }
 }
+
+export const getLastUpdate = async (req,res) => {
+    try {
+        const response = await Burned.findAll({where: {createdAt: req.body.createdAt}})
+            res.status(200).json({ message: 'Dados de criação encontrado', response });
+    }   catch (error) {
+        res.status(500).json({ message: 'Erro ao buscar os dados de queimadas', error });
+    }
+}

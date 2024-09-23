@@ -3,13 +3,16 @@ import styled from "styled-components";
 export const ForestSession = styled.div`
     width: 100%;
     height: 100%;
-    /* background-color: var(--lightTheme-bg); */
-    /* border: red solid 1px; */
     margin: 8rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
+    @media (max-width: 725px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 export const Forest = styled.div`
@@ -17,9 +20,14 @@ export const Forest = styled.div`
     border-radius: 8px;
     max-width: 500px;
     height: 100%;
-    /* border: green solid 1px; */
     background-color: ${({ theme }) => theme.forestSession};
-    /* border: red solid 1px; */
+    @media (max-width: 1024px) {
+        max-width: 350px;
+    }
+
+    @media (max-width: 725px) {
+        max-width: 330px;
+    }
 
 `
 
@@ -31,34 +39,49 @@ export const ForestInfo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: yellow solid 1px; */
-    /* border: green solid 1px; */
     background-color: ${({ theme }) => theme.forestSession};
+
+    @media (max-width: 1024px) {
+        max-width: 350px;
+    }
+
+    @media (max-width: 725px) {
+        max-width: 330px;
+    }
 `
 
 export const ForestImg = styled.img`
     width: 3rem;
-    height: 100%;
+    
+    @media (max-width: 1024px) {
+        width: 2.5rem;
+    }
 `
 export const Session = styled.div`
     width: 100%;
     height: 100%;
     margin: 1rem 0;
-    /* border: blue solid 1px; */
     font-size: 1.2rem;
     color: var(--dark-text);
+
+    @media (max-width: 1024px) {
+        font-size: 1rem;
+    }
 `
 
 export const Span = styled.span`
     display: flex;
     align-items: center;
-    /* border: orangered solid 1px; */
     font-weight: 100;
     gap: .5rem;
 `
 
 export const P = styled.p`
     font-size: 2rem;
+
+    @media (max-width: 1024px) {
+        font-size: 1.4rem;
+    }
 `
 
 export const ForestHutImg = styled.img`
@@ -66,6 +89,9 @@ export const ForestHutImg = styled.img`
     height: 100%;
     border-radius: 8px;
 
+    @media (max-width: 1024px) {
+        width: 4rem;
+    }
 `
 
 export const Description = styled.p`
@@ -73,4 +99,8 @@ export const Description = styled.p`
     color: var(--dark-text);
     text-align: center;
     padding: 2rem 0;
+
+    @media (max-width: 1024px) {
+        font-size: 1rem;
+    }
 `

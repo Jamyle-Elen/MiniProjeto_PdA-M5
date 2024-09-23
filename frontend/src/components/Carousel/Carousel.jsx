@@ -1,5 +1,5 @@
-import { ThemeContext, ThemeProvider } from 'styled-components';
-import { useContext, useState } from 'react';
+import { ThemeContext } from 'styled-components';
+import { useContext } from 'react';
 import { lightTheme, darkTheme } from '../../utils/themes';
 import Images from '../../assets/images';
 import { CarouselContainer, CarouselImg, ImageContainerII, ImageContainerIII, CarouselTitle } from './Carousel.styles';
@@ -9,18 +9,17 @@ const Carousel = () => {
   return (
     <>
         <CarouselTitle>
-        {theme === lightTheme ? 'ANIMAIS DA AMAZONIA' : 'ANIMAIS EM EXTINÇÃO'}
+        {theme === lightTheme ? 'ANIMAIS DA AMAZÔNIA' : 'ANIMAIS EM RISCO DE EXTINÇÃO'}
         </CarouselTitle>
       <CarouselContainer>
-        {/* <h4>ANIMAIS EM EXTINÇÃO</h4> */}
         <ImageContainerII>
-            <CarouselImg src={theme === lightTheme ? Images.once : Images.panda} alt="" /></ImageContainerII>
+            <CarouselImg src={theme === lightTheme ? Images.panda : Images.ariranha} alt="Animais da amazonia" /></ImageContainerII>
         <ImageContainerIII>
-            <CarouselImg src={theme === lightTheme ? Images.once : Images.panda} alt="" /></ImageContainerIII>
+            <CarouselImg src={theme === lightTheme ? Images.gatoMaracaja : Images.peixeboi} alt="Animais da amazonia" /></ImageContainerIII>
         <ImageContainerIII>
-            <CarouselImg src={theme === lightTheme ? Images.once : Images.panda} alt="" /></ImageContainerIII>
+            <CarouselImg src={theme === lightTheme ? Images.once : Images.panda} alt="Animais da amazonia" /></ImageContainerIII>
         <ImageContainerII>
-            <CarouselImg src={theme === lightTheme ? Images.once : Images.panda} alt="" /></ImageContainerII>
+            <CarouselImg src={theme === lightTheme ? Images.gaviaoReal : Images.ave} alt="Animais da amazonia" /></ImageContainerII>
 
       </CarouselContainer>
     </>

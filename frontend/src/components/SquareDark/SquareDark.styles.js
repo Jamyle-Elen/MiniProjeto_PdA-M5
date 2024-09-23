@@ -1,17 +1,40 @@
 import styled from "styled-components";
 
+export const SessionSquare = styled.div`
+display: flex;
+width: 100vw;
+position: relative;
+justify-content: center;
+gap: 5rem;
+height: 10vh;
+
+    @media (max-width: 725px) {
+        gap: 3rem;
+    }
+
+    @media (max-width: 575px) {
+        gap: 2rem;
+    }
+`
+
 export const Square = styled.div`
-top: 95%;
-/* left ta como gambiarra, arrumar dps */
-/* GAGA */
-left: 33%;
+bottom: 50%;
 width: 100px;
 height: 100px;
 z-index: 10000;
-position: absolute;
-display: flex;
-gap: 5rem;
+position: relative;
+
 cursor: pointer;
+
+    @media (max-width: 575px) {
+        width: 80px;
+        height: 80px;
+    }
+
+    @media (max-width: 450px) {
+        width: 60px;
+        height: 60px;
+    }
 `
 
 export const SquareImg = styled.img`
@@ -26,5 +49,13 @@ transition: .4s ease;
         background-color: var(--squareButton-hover);
         box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
         border-radius: none;
+    }
+
+    @media (max-width: 575px) {
+        padding: 1.2rem;
+    }
+
+    @media (max-width: 450px) {
+        padding: .8rem;
     }
 `

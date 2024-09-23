@@ -11,13 +11,7 @@ const SessionDark = ({ selectedIndex }) => {
         const getForestData = async () => {
             try {
                 const response = await axios.get('http://localhost:3000/getForestData');
-                console.log(response.data); // Verifique a estrutura dos dados no console
-                if (response.data && response.data.data && response.data.data.length > 0) {
-                    // Acessa o primeiro item no array data
                     setForestData(response.data.data[selectedIndex]);
-                } else {
-                    console.error('Dados de floresta não encontrados ou response malformada');
-                }
             } catch (error) {
                 console.error('Erro ao buscar dados da floresta:', error);
             }
@@ -29,7 +23,16 @@ const SessionDark = ({ selectedIndex }) => {
       <ForestSession>
         <Border>
         <Forest>
-        <ForestImgBig src={forestData ? forestData.forestImg : null} alt="Mata de Igapó" />
+        <ForestImgBig src={
+    selectedIndex === 0 
+      ? Images.MataIgapoImg 
+      : selectedIndex === 1 
+      ? Images.MataTerraFirmeImg
+      : selectedIndex === 2 
+      ? Images.SemihumidForestImg 
+      : Images.MataVarzeaImg
+  } 
+         alt="Mata da Floresta Amazonica" />
         </Forest>
         </Border>
         <Border>

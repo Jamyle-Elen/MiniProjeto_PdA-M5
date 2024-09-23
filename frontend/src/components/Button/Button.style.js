@@ -25,12 +25,17 @@ const ReportButton = styled.button`
     right: -10px;
     bottom: -10px;
     left: -10px;
-    border: 2px solid #d9d9d9;
+    border: 2px solid var(--report-button);
     pointer-events: none;
   }
 
   &:hover {
     background-color: var(--lightTheme-btn-hover);
+  }
+
+  @media (max-width: 1024px) {
+    width: 10rem;
+    height: 2rem;
   }
 `
 

@@ -4,29 +4,26 @@ import { useEffect, useState } from "react";
 import Images from "../../assets/images"; 
 import axios from 'axios'
 
-
 const SecondContainer = () => {
   const [fireData, setFireData] = useState(null)
 
-  
   useEffect(() => {
-    const getFireData = async () => {
-      try {
-        const response = await axios.get('http://localhost:3000/getFireData');
-        setFireData(response.data.response[0]);
-        // console.log(response.data.response[0]);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
     getFireData();
   }, []);
 
+  const getFireData = async () => {
+    try {
+      const response = await axios.get('http://localhost:3000/getFireData');
+      setFireData(response.data.response[0]);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <>
-      <ForestSession> {/* section */}
-        <Forest> {/* div */}
+      <ForestSession>
+        <Forest>
           <Session>
             <Span>
             <ForestImg src={Images.fire} alt="Queimadas Ativas" />

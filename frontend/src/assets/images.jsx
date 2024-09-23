@@ -16,7 +16,17 @@ import hut from './images/hut.png'
 import fire from './images/fire.png'
 import once from './images/once.webp'
 import panda from './images/panda.webp'
-import MataIgapoBig from './images/mata-igapo-big.jpg'
+import MataIgapoImg from './images/mata-igapo-big.jpg'
+import SemihumidForestImg from './images/semi-humid-forest.webp'
+import MataTerraFirmeImg from './images/mata-terra-firme-II.jpg'
+import MataVarzeaImg from './images/mata-varzea-II.webp'
+import uacari from './images/Uacari.jpg'
+import peixeboi from './images/peixeboi.webp'
+import gaviaoReal from './images/gaviaoreal.webp'
+import ave from './images/ave.jpg'
+import ariranha from './images/ariranha.webp'
+import gatoMaracaja from './images/gatomaracaja.webp'
+import loboGuara from './images/lobo-guara.jpg'
 
 const Images = {
     moon_icon_light,
@@ -37,7 +47,17 @@ const Images = {
     fire,
     once,
     panda,
-    MataIgapoBig
+    MataIgapoImg,
+    SemihumidForestImg,
+    MataTerraFirmeImg,
+    MataVarzeaImg,
+    uacari,
+    peixeboi,
+    gaviaoReal,
+    ave,
+    ariranha,
+    gatoMaracaja,
+    loboGuara
 }
 
 export default Images

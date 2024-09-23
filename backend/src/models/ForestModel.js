@@ -11,14 +11,10 @@ const Forest = db.define(
             type: DataTypes.BOOLEAN,
         },
         endemicSpecies: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.BOOLEAN,
         },
         forestDescription: {
             type: DataTypes.STRING,
-        },
-        forestImage: {
-            type: DataTypes.STRING,
-            // https://i.ibb.co/RBLrs0s/mata-igapo-II.jpg
         },
     },
     {
